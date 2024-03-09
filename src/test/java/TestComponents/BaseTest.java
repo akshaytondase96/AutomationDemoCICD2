@@ -40,9 +40,9 @@ public class BaseTest
     		if(browserName.equals("chrome"))
     {
     	ChromeOptions options=new ChromeOptions();		
-    	options.addArguments("headless");   
+    	//options.addArguments("headless");   
     	WebDriverManager.chromedriver().setup();
-   	  WebDriver driver=new ChromeDriver(options);
+   	  WebDriver driver=new ChromeDriver();
    	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
 	 return driver;
