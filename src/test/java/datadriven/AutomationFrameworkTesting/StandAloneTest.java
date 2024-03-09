@@ -37,6 +37,7 @@ public class StandAloneTest extends BaseTest
 	    ConfirmPage confirmpage=checkout.selectCountry(input.get("countryName"));
 	    Assert.assertEquals(confirmpage.confirmationMessage(),"THANKYOU FOR THE ORDER.");
          //This is updated1
+//This is updated2
       }
      
      @Test(dependsOnMethods= {"submitOrder"})
