@@ -1,3 +1,4 @@
+
 package datadriven.AutomationFrameworkTesting;
 
 import java.io.IOException;
@@ -35,7 +36,9 @@ public class StandAloneTest extends BaseTest
 	    CheckOut checkout=cartpage.goToCheckOutPage();
 	    ConfirmPage confirmpage=checkout.selectCountry(input.get("countryName"));
 	    Assert.assertEquals(confirmpage.confirmationMessage(),"THANKYOU FOR THE ORDER.");
+         //This is updated1
       }
+     
      @Test(dependsOnMethods= {"submitOrder"})
      public void orderHistory()
      {
