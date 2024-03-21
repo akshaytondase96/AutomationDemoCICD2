@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 import TestComponents.BaseTest;
 import TestComponents.Retry;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+//21-03-24-first commit
 public class StandAloneTest extends BaseTest
 {
      @Test(dataProvider= "getData",groups= {"Purchase"})
